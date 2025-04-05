@@ -117,3 +117,22 @@ form#upload-form button {
   font-size: 0.9em;
   color: #999;
 }
+#draw-controls {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+#draw-controls input,
+#draw-controls button {
+  margin: 0 10px;
+  padding: 5px;
+}
+
+canvas#drawing-canvas {
+  display: block;
+  margin: 0 auto 40px auto;
+  border: 2px solid #ccc;
+  background: white;
+  cursor: crosshair;
+  border-radius: 8px;
+}
