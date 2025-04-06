@@ -14,41 +14,36 @@
     </nav>
   </header>
 
+  <!-- Art Gallery -->
   <section>
     <h2>Gallery</h2>
     <div id="gallery">
-      <!-- Example artwork (replace with your own images) -->
       <img src="assets/images/sample1.jpg" alt="Art 1" />
       <img src="assets/images/sample2.jpg" alt="Art 2" />
     </div>
   </section>
-<section>
-  <h2>Draw Something!</h2>
-  <div id="draw-controls">
-    <label for="color">Color:</label>
-    <input type="color" id="color" value="#000000" />
 
-    <label for="brush-size">Brush Size:</label>
-    <input type="range" id="brush-size" min="1" max="20" value="5" />
-
-    <button onclick="clearCanvas()">Clear</button>
-  </div>
-
-  <canvas id="drawing-canvas" width="500" height="400"></canvas>
-</section>
-<button onclick="downloadDrawing()">Download</button>
-<script src="draw.js"></script>
+  <!-- Drawing Canvas -->
   <section>
-    <h2>Upload Your Art (coming soon)</h2>
-    <form id="upload-form">
-      <input type="file" accept="image/*" disabled />
-      <button type="submit" disabled>Upload</button>
-      <p class="note">Upload system coming soon! Stay tuned.</p>
-    </form>
+    <h2>Draw Something!</h2>
+    <div id="draw-controls">
+      <label for="color">Color:</label>
+      <input type="color" id="color" value="#000000" />
+
+      <label for="brush-size">Brush Size:</label>
+      <input type="range" id="brush-size" min="1" max="20" value="5" />
+
+      <button onclick="clearCanvas()">Clear</button>
+      <button onclick="downloadDrawing()">Download</button>
+    </div>
+
+    <canvas id="drawing-canvas" width="500" height="400"></canvas>
   </section>
 
   <footer>
     <p>© 2025 Toonware Productions</p>
   </footer>
+
+  <script src="draw.js"></script>
 </body>
 </html>
