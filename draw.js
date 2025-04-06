@@ -27,3 +27,11 @@ function draw(e) {
 function clearCanvas() {
     ctx.clearRect(0, 0, canvas.width, canvas.height);
 }
+
+// ⬇️ NEW: Download function
+function downloadDrawing() {
+    const link = document.createElement("a");
+    link.download = "toonware-drawing.png";
+    link.href = canvas.toDataURL("image/png");
+    link.click();
+}
